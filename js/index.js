@@ -132,11 +132,13 @@ function draw() {
 	// ctx.fillStyle = 'rgb(47, 56, 71)';
 	ctx.fillStyle = 'rgba(240,240,255,0.9)';
 	ctx.strokeStyle = 'rgba(220,220,255,0.8)';
+	ctx.font = '100 25px serif';
+	ctx.fillText(`dots: ${randDots.length}`, 35, 90);
 	ctx.save();
 	// рисуем позиции A, B, C
 
 	// A
-	ctx.font = '100 25px serif';
+
 	ctx.fillText('A', (cnv.width / 100) * 49.5, (cnv.height / 100) * 8);
 	arc(ver.a.x.per, ver.a.y.per, 3);
 	// B
